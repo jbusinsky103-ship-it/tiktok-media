@@ -16,3 +16,8 @@
 - Signs someone is secretly jealous of you
 - How to make your crush fall for you
 - 2026-11-18: How to spot a fake friend (cards, scheduled 18:00)
+- 2026-11-18: Body language signs someone secretly likes you (cards, 10:00)
+- 2026-11-18: How to become impossible to manipulate (video, 12:00)
+- 2026-11-18: Signs you're dating a narcissist (cards, 14:00)
+- 2026-11-18: Signs someone is lying to your face (video, 16:00)
+- 2026-11-18: Phrases that give you instant power (cards, 20:00)
