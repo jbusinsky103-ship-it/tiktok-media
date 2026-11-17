@@ -23,7 +23,8 @@ Media host for scheduled TikTok posts. Files here are public; Metricool fetches 
 2. Render each; look at every output image/frame before committing (check text fits, nothing cut off).
 3. Commit to `posts/YYYY-MM-DD/`, push to main, verify each raw URL returns 200.
 4. Schedule each in Metricool (blogId 7006725, network tiktok, timezone Europe/Warsaw) for the NEXT day at
-   10:00, 12:00, 14:00, 16:00, 18:00. tiktokData: title (required), privacyOption PUBLIC_TO_EVERYONE,
+   10:00, 12:00, 14:00, 16:00, 18:00. First call getScheduledPosts for that day: if a slot is already taken,
+   use 20:00 (then 08:00) instead so two posts never go out at the same time. tiktokData: title (required), privacyOption PUBLIC_TO_EVERYONE,
    autoAddMusic true, isAigc false for cards. autoPublish true, draft false.
    Caption: 1 hook line + engagement question ("Which one hit hardest? Comment the number 👇") + "Free ebook in bio 🧠" + 4–6 hashtags incl. #darkpsychology #fyp.
 5. Append the 5 topics with date to `topics_used.md`, commit and push.
