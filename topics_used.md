@@ -1,0 +1,18 @@
+# Topics already used (do not repeat)
+- How to win every argument
+- How to make them jealous after a breakup
+- How to make anyone love you
+- How to control your boss / influence your teacher or boss
+- How to make anyone feel guilty without saying a word
+- How to make people feel they can't lose you
+- How to make anyone open up to you
+- How to make people take you seriously
+- How to have your partner choose you every day
+- Daily psychology: with vs. without psychology
+- Signs you're being used
+- Why attractive people ignore you
+- Trying too hard kills attractiveness
+- How to become the leader of any group
+- Signs someone is secretly jealous of you
+- How to make your crush fall for you
+- 2026-11-18: How to spot a fake friend (cards, scheduled 18:00)
