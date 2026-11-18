@@ -25,7 +25,10 @@ Media host for scheduled TikTok posts. Files here are public; Metricool fetches 
 4. Schedule each in Metricool (blogId 7006725, network tiktok, timezone Europe/Warsaw) for the NEXT day at
    10:00, 12:00, 14:00, 16:00, 18:00. First call getScheduledPosts for that day: if a slot is already taken,
    use 20:00 (then 08:00) instead so two posts never go out at the same time. tiktokData: title (required), privacyOption PUBLIC_TO_EVERYONE,
-   autoAddMusic true for cards (must be false for videos — Metricool rejects it), isAigc false. autoPublish true, draft false.
+   autoAddMusic true for cards (must be false for videos — Metricool rejects it), isAigc false. draft false.
+   autoPublish: true for CARDS (they publish automatically; TikTok adds music). FALSE for VIDEOS — the user gets a
+   Metricool app notification at the scheduled time and publishes it himself after picking a dark trending TikTok sound.
+   Videos still contain the music bed from assets/music as a fallback.
    Caption: 1 hook line + engagement question ("Which one hit hardest? Comment the number 👇") + "Free ebook in bio 🧠" + 4–6 hashtags incl. #darkpsychology #fyp.
 5. Append the 5 topics with date to `topics_used.md`, commit and push.
 6. If anything fails (push refused, Metricool error, network not connected), stop and report — don't retry endlessly.
