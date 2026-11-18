@@ -21,3 +21,8 @@
 - 2026-11-18: Signs you're dating a narcissist (cards, 14:00)
 - 2026-11-18: Signs someone is lying to your face (video, 16:00)
 - 2026-11-18: Phrases that give you instant power (cards, 20:00)
+- 2026-11-19: Signs someone is gaslighting you (cards, 10:00)
+- 2026-11-19: How to make people respect you instantly (video, 12:00)
+- 2026-11-19: Body language that makes you look powerful (cards, 14:00)
+- 2026-11-19: Signs you're being love-bombed (video, 16:00)
+- 2026-11-19: How to read anyone like a book (cards, 18:00)
