@@ -2,7 +2,7 @@
 scenes.json: {"scenes":[{"tag":"warning","lines":[["Text line\\nsecond line","serif_italic",92,"white"]],"dur":3.0}, ...],
               "cover": true}   # cover=true appends book-cover CTA end card (4.5s)
 font keys: serif, serif_italic, serif_bold_italic, sans, sans_bold ; colors: white, red, gray
-Renders 1080x1920 30fps silent MP4 in the dark red/black brand style."""
+Renders 1080x1920 30fps MP4 with a dark ambient music bed (random track from assets/music, or "music": path in JSON) in the dark red/black brand style."""
 import sys, json, os, subprocess, tempfile
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 W,H,FPS=1080,1920,30
@@ -61,5 +61,16 @@ def main(spec,out):
         if ch>1100: ch=1100; cw=int(cov.width*ch/cov.height)
         cov=cov.resize((cw,ch)); fr=int(4.5*FPS)
         for i in range(fr): save(Image.blend(black,cover_frame(cov,i/fr),min(1,i/F)))
-    subprocess.run(["ffmpeg","-y","-loglevel","error","-framerate",str(FPS),"-i",f"{tmp}/%05d.jpg","-c:v","libx264","-pix_fmt","yuv420p","-crf","20","-movflags","+faststart",out],check=True)
+    dur=n/FPS
+    music=cfg.get("music")
+    if not music:
+        import random, glob
+        tracks=sorted(glob.glob(os.path.join(HERE,"..","assets","music","*.m4a")))
+        music=random.choice(tracks) if tracks else None
+    cmd=["ffmpeg","-y","-loglevel","error","-framerate",str(FPS),"-i",f"{tmp}/%05d.jpg"]
+    if music:
+        cmd+=["-i",music,"-map","0:v","-map","1:a","-af",f"afade=t=in:d=1,afade=t=out:st={max(0,dur-2):.2f}:d=2",
+              "-c:a","aac","-b:a","160k","-t",f"{dur:.2f}"]
+    cmd+=["-c:v","libx264","-pix_fmt","yuv420p","-crf","20","-movflags","+faststart",out]
+    subprocess.run(cmd,check=True)
 if __name__=="__main__": main(sys.argv[1],sys.argv[2])

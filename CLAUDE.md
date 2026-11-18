@@ -15,7 +15,7 @@ Media host for scheduled TikTok posts. Files here are public; Metricool fetches 
   Copy `templates/cards_example.html` (keep its CSS), replace the text, render:
   `python3 templates/render_cards.py <dir_with_cards.html> <prefix>` → writes PNGs to /mnt/user-data/outputs/<prefix>_N.png
   (edit the output path in the script if that dir doesn't exist). Move them to `posts/YYYY-MM-DD/<slug>/`.
-- **Video:** 1080x1920 silent MP4, ~20–25 s. Write a scenes JSON (see docstring) and run
+- **Video:** 1080x1920 MP4 with music, ~20–25 s. make_video.py automatically adds a random royalty-free dark ambient bed from `assets/music/` (regenerate with `templates/make_music.py assets/music`). Never post a silent video. Write a scenes JSON (see docstring) and run
   `python3 templates/make_video.py scenes.json posts/YYYY-MM-DD/<slug>.mp4`. Ends with book-cover CTA.
 
 ## Daily run
