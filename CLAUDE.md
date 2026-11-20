@@ -13,8 +13,8 @@ Media host for scheduled TikTok posts. Files here are public; Metricool fetches 
 - **Cards (TikTok photo carousel):** 6 slides, 1080x1350. Slide 1 hook + teaser ("#2 hurts the most"),
   slides 2–5 one point each, slide 6 takeaway + "FREE EBOOK — LINK IN BIO".
   Copy `templates/cards_example.html` (keep its CSS), replace the text, render:
-  `python3 templates/render_cards.py <dir_with_cards.html> <prefix>` → writes PNGs to /mnt/user-data/outputs/<prefix>_N.png
-  (edit the output path in the script if that dir doesn't exist). Move them to `posts/YYYY-MM-DD/<slug>/`.
+  `python3 templates/render_cards.py <dir_with_cards.html> <prefix>` → writes JPEGs to $OUT_DIR (default /mnt/user-data/outputs)/<prefix>_N.jpg.
+  TikTok photo posts REJECT PNG (only JPEG/WebP) — never upload PNG cards. Move them to `posts/YYYY-MM-DD/<slug>/`.
 - **Video:** 1080x1920 MP4 with music, ~20–25 s. make_video.py automatically adds a random royalty-free dark ambient bed from `assets/music/` (regenerate with `templates/make_music.py assets/music`). Never post a silent video. Write a scenes JSON (see docstring) and run
   `python3 templates/make_video.py scenes.json posts/YYYY-MM-DD/<slug>.mp4`. Ends with book-cover CTA.
 
@@ -26,9 +26,8 @@ Media host for scheduled TikTok posts. Files here are public; Metricool fetches 
    10:00, 12:00, 14:00, 16:00, 18:00. First call getScheduledPosts for that day: if a slot is already taken,
    use 20:00 (then 08:00) instead so two posts never go out at the same time. tiktokData: title (required), privacyOption PUBLIC_TO_EVERYONE,
    autoAddMusic true for cards (must be false for videos — Metricool rejects it), isAigc false. draft false.
-   autoPublish: true for CARDS (they publish automatically; TikTok adds music). FALSE for VIDEOS — the user gets a
-   Metricool app notification at the scheduled time and publishes it himself after picking a dark trending TikTok sound.
-   Videos still contain the music bed from assets/music as a fallback.
+   autoPublish: true for BOTH cards and videos (with false, the video only triggers an app notification and
+   is never posted unless the user finishes it manually in TikTok). Videos carry the music bed from assets/music.
    Caption: 1 hook line + engagement question ("Which one hit hardest? Comment the number 👇") + "Free ebook in bio 🧠" + 4–6 hashtags incl. #darkpsychology #fyp.
 5. Append the 5 topics with date to `topics_used.md`, commit and push.
 6. If anything fails (push refused, Metricool error, network not connected), stop and report — don't retry endlessly.
