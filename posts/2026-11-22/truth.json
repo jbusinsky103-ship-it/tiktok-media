@@ -1,0 +1,7 @@
+{"scenes":[
+{"tag":"dark psychology","lines":[["How to make\nanyone tell you\nthe truth","serif_italic",100,"white"],["#3 works every time","sans",42,"gray"]],"dur":3.0},
+{"tag":"step one","lines":[["Ask, then\nstay silent.","serif_italic",92,"white"],["Silence feels unbearable.\nLiars fill it with mistakes.","sans",44,"gray"]],"dur":3.4},
+{"tag":"step two","lines":[["Ask the same question\nlater, differently.","serif_italic",80,"white"],["The truth stays the same.\nA lie changes shape.","sans",44,"gray"]],"dur":3.4},
+{"tag":"step three","lines":[["Act like you\nalready know.","serif_italic",92,"red"],["\"I'm not mad. I just want\nto hear it from you.\"","sans",44,"gray"]],"dur":3.4},
+{"tag":"step four","lines":[["Ask them to tell\nit backwards.","serif_italic",92,"white"],["Real memories survive it.\nMade-up stories collapse.","sans",44,"gray"]],"dur":3.4}
+],"cover":true}
