@@ -38,3 +38,8 @@
 - 2026-11-22: Signs someone is intimidated by you (cards, 14:00)
 - 2026-11-22: How to make your silence powerful (video, 16:00)
 - 2026-11-22: How to spot hidden insecurity in anyone (cards, 18:00)
+- 2026-11-23: Signs you're more attractive than you think (cards, 10:00)
+- 2026-11-23: How to make anyone want to impress you (video, 12:00)
+- 2026-11-23: Signs someone is guilt-tripping you (cards, 14:00)
+- 2026-11-23: How to stay calm when someone provokes you (video, 16:00)
+- 2026-11-23: Body language signs someone doesn't trust you (cards, 18:00)
