@@ -30,4 +30,6 @@ Media host for scheduled TikTok posts. Files here are public; Metricool fetches 
    is never posted unless the user finishes it manually in TikTok). Videos carry the music bed from assets/music.
    Caption: 1 hook line + engagement question ("Which one hit hardest? Comment the number 👇") + "Free ebook in bio 🧠" + 4–6 hashtags incl. #darkpsychology #fyp.
 5. Append the 5 topics with date to `topics_used.md`, commit and push.
-6. If anything fails (push refused, Metricool error, network not connected), stop and report — don't retry endlessly.
+6. Send the user both MP4 videos of the day (SendUserFile, display "attach") plus a Czech note with a ready-to-copy
+   Instagram caption for each. He posts them to Instagram Reels himself — never post to Instagram.
+7. If anything fails (push refused, Metricool error, network not connected), stop and report — don't retry endlessly.
