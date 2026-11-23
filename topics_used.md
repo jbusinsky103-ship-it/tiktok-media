@@ -43,3 +43,8 @@
 - 2026-11-23: Signs someone is guilt-tripping you (cards, 14:00)
 - 2026-11-23: How to stay calm when someone provokes you (video, 16:00)
 - 2026-11-23: Body language signs someone doesn't trust you (cards, 18:00)
+- 2026-11-24: Signs someone is secretly obsessed with you (cards, 10:00)
+- 2026-11-24: How to make someone chase you (video, 12:00)
+- 2026-11-24: Signs you're dealing with a dark empath (cards, 14:00)
+- 2026-11-24: Psychology tricks to win any negotiation (video, 16:00)
+- 2026-11-24: Signs you're dealing with an energy vampire (cards, 18:00)
