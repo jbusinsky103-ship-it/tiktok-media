@@ -48,3 +48,8 @@
 - 2026-11-24: Signs you're dealing with a dark empath (cards, 14:00)
 - 2026-11-24: Psychology tricks to win any negotiation (video, 16:00)
 - 2026-11-24: Signs you're dealing with an energy vampire (cards, 18:00)
+- 2026-11-25: Signs a narcissist is losing control over you (cards, 10:00)
+- 2026-11-25: How to read anyone through their eyes (video, 12:00)
+- 2026-11-25: Signs your partner is losing interest (cards, 14:00)
+- 2026-11-25: How to make people trust you instantly (video, 16:00)
+- 2026-11-25: How to become unforgettable to anyone (cards, 18:00)
