@@ -53,3 +53,8 @@
 - 2026-11-25: Signs your partner is losing interest (cards, 14:00)
 - 2026-11-25: How to make people trust you instantly (video, 16:00)
 - 2026-11-25: How to become unforgettable to anyone (cards, 18:00)
+- 2026-11-28: Signs someone uses kindness to control you (cards, 10:00)
+- 2026-11-28: How to make anyone value you more (video, 12:00)
+- 2026-11-28: Signs someone is playing mind games with you (cards, 14:00)
+- 2026-11-28: How to make someone regret losing you (video, 16:00)
+- 2026-11-28: Phrases manipulators use on you (cards, 18:00)
